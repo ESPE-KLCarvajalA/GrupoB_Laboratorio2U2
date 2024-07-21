@@ -1,7 +1,10 @@
 <app-padre></app-padre>
 <div class="content">
     <app-inicio></app-inicio>
-    <!-- <app-about></app-about> -->
+    <div class="about-container">
+        <app-about (showBio)="handleShowBio()"></app-about>
+        <div class="bio-content" *ngIf="bioVisible">{{ bio }}</div>
+    </div>
     <!-- <app-servicios></app-servicios> -->
 </div>
  <app-footer></app-footer>

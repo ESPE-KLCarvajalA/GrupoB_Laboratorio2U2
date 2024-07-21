@@ -16,3 +16,23 @@ section h2 {
 section p {
     font-size: 16px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Centra horizontalmente */
+    margin : 20px 20px 20px 20px;
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+  
+  }
+  
+  .bio-content {
+    margin-left: 20px; /* Espacio entre el about section y la biografía */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+ 
