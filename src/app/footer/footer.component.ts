@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css'
+})
+export class FooterComponent {
+  footerText: string = 'PhotoFolio';
+  socialLinks: { href: string, iconClass: string }[] = [
+    { href: 'https://facebook.com', iconClass: 'fab fa-facebook' },
+    { href: 'https://twitter.com', iconClass: 'fab fa-twitter' },
+    { href: 'https://instagram.com', iconClass: 'fab fa-instagram' },
+    { href: 'https://linkedin.com', iconClass: 'fab fa-linkedin' }
+  ];
+}
