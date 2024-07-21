@@ -1,0 +1,56 @@
+<div id="inicio" class="presentation">
+    <h1 class="underlight">{{headingText}}</h1>
+    <h2>{{subheadingText}}</h2>
+    <p>{{descriptionText}}</p>
+    <a class="cta-button" (click)="onclick()">Conoce Más</a>
+</div>
+<div class="gallery-container">
+    <!-- Galleria de imagenes ES Modules -->
+    <div class="galeria">
+        <a>
+            <img [src]="gallery1" alt="img1">
+            <div class="overlay"></div>
+        </a>
+    </div>
+    <div class="galeria">
+        <a>
+            <img [src]="gallery2" alt="img1">
+            <div class="overlay"></div>
+        </a>
+    </div>
+    <div class="galeria">
+        <a>
+            <img [src]="gallery3" alt="img1">
+            <div class="overlay"></div>
+        </a>
+    </div>
+    <div *ngIf="isAuthenticated">
+        <!-- componentes estructurales -->
+        <div class="gallery-container">
+            <div class="galeria">
+                <a>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5fcfcd6008d60137e9f93e1f/f9676a50-a72e-4d9a-8b8e-156c4eda977d/IMG_0176.jpg?format=1500w"
+                        alt="img4">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="galeria">
+                <a>
+                    <img
+                        src="https://images.pexels.com/photos/209339/pexels-photo-209339.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="galeria">
+                <a>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5fcfcd6008d60137e9f93e1f/f9676a50-a72e-4d9a-8b8e-156c4eda977d/IMG_0176.jpg?format=1500w"
+                        alt="img4">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="auth-container mt-4">
+    <a class="cta-button" (click)="toggleAuth()">{{isAuthenticated ? 'Ocultar':'Ver Más'}}</a>
+</div>

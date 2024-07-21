@@ -1,0 +1,111 @@
+.presentation {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--presentation-text-color, #fff);
+    background-color: var(--presentation-bg-color, #000);
+}
+.presentation h1 {
+    font-size: 2.5em;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.underlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0.5px;
+    bottom: 0;
+    height: 4px;
+    background-color: #27a776;
+    transform: scalex(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.underlight:hover::after {
+    transform: scalex(1);
+    transform-origin: bottom left;
+}
+
+.presentation h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: var(--presentation-subheading-color, #fff);
+}
+
+.presentation p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: var(--presentation-text-color, #fff);
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-bg-color, #27a776);
+    color: var(--button-text-color, #fff);
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: var(--button-hover-color, #218838);
+}
+
+/* galería */
+.galeria {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5px;
+    padding-top: .65rem;
+    padding-right: .75rem;
+}
+.galeria img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    border-radius: 10px;
+}
+.galeria:hover img {
+    transform: scale(1.1);
+}
+.galeria:hover .overlay {
+    opacity: 1;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.galeria:hover .icon {
+    opacity: 1;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auth-container{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
