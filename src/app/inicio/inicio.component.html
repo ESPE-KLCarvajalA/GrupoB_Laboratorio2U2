@@ -2,7 +2,7 @@
     <h1 class="underlight">{{headingText}}</h1>
     <h2>{{subheadingText}}</h2>
     <p>{{descriptionText}}</p>
-    <a class="cta-button" (click)="onclick()">Conoce Más</a>
+    <a class="cta-button" href="#nosotros">Conoce Más</a>
 </div>
 <div class="gallery-container">
     <!-- Galleria de imagenes ES Modules -->
@@ -24,7 +24,7 @@
             <div class="overlay"></div>
         </a>
     </div>
-    <div *ngIf="isAuthenticated">
+    <div *ngIf="mostrarMas">
         <!-- componentes estructurales -->
         <div class="gallery-container">
             <div class="galeria">
@@ -52,5 +52,5 @@
     </div>
 </div>
 <div class="auth-container mt-4">
-    <a class="cta-button" (click)="toggleAuth()">{{isAuthenticated ? 'Ocultar':'Ver Más'}}</a>
+    <a class="cta-button" (click)="toggleAuth()">{{mostrarMas ? 'Ocultar':'Ver Más'}}</a>
 </div>

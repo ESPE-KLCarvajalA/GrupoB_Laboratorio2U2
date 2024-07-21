@@ -1,0 +1,18 @@
+.content {
+    padding: 20px;
+    background-color: #000;
+    color: aliceblue;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+}
