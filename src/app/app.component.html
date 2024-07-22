@@ -5,9 +5,6 @@
         <app-about (showBio)="handleShowBio()"></app-about>
         <div class="bio-content" *ngIf="bioVisible">{{ bio }}</div>
     </div>
-    <!-- <app-servicios></app-servicios> -->
-  <app-inicio></app-inicio>
-  <!-- <app-about></app-about> -->
   <app-servicios
     [title]="'Servicios'"
     [description]="
