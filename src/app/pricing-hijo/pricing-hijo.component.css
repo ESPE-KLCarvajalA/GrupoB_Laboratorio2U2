@@ -1,0 +1,56 @@
+.pricing-hijo-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .pricing-card {
+    width: 300px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card .price {
+    font-size: 22px;
+    color: #27a776;
+    margin-bottom: 15px;
+  }
+  
+  .pricing-card .description {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27a776;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-card .btn:hover {
+    background-color: #ffffff;
+    color: #000000; /* Cambiar el color del texto cuando se cambia el fondo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

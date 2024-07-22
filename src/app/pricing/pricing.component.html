@@ -1,0 +1,48 @@
+<div class="pricing-section">
+    <h2 class="pricing-title" data-aos="fade-up" data-aos-duration="1000">Nuestros Precios</h2>
+    <div class="pricing-container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="pricing-card">
+        <h3>Sesiones Fotográficas</h3>
+        <p class="price">$100/mes</p>
+        <ul>
+          <li>10 fotos digitales</li>
+          <li>1 sesión fotográfica</li>
+          <li>Acceso a galería en línea</li>
+        </ul>
+        <button class="btn" (click)="selectService('Sesiones Fotográficas', '$100/mes')">Seleccionar</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Impresiones Fotográficas</h3>
+        <p class="price">$200/mes</p>
+        <ul>
+          <li>20 fotos digitales</li>
+          <li>2 sesiones fotográficas</li>
+          <li>Impresiones físicas incluidas</li>
+        </ul>
+        <button class="btn" (click)="selectService('Impresiones Fotográficas', '$200/mes')">Seleccionar</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Regalos Personalizados</h3>
+        <p class="price">$300/mes</p>
+        <ul>
+          <li>50 fotos digitales</li>
+          <li>5 sesiones fotográficas</li>
+          <li>Álbumes y regalos personalizados</li>
+        </ul>
+        <button class="btn" (click)="selectService('Regalos Personalizados', '$300/mes')">Seleccionar</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Fotografía Aérea y Video Drone</h3>
+        <p class="price">$300/mes</p>
+        <ul>
+          <li>50 fotos digitales</li>
+          <li>5 sesiones fotográficas</li>
+          <li>Fotografía aérea y videos con drone</li>
+        </ul>
+        <button class="btn" (click)="selectService('Fotografía Aérea y Video Drone', '$300/mes')">Seleccionar</button>
+      </div>
+    </div>
+  </div>
+  
+  <app-pricing-hijo *ngIf="showModal" [service]="selectedService" [price]="selectedPrice" (close)="closeModal()"></app-pricing-hijo>
+  
