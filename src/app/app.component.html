@@ -7,7 +7,7 @@
       'Nuestro estudio fotográfico lleva más de 20 años ofreciendo los mejores servicios de fotografía, ofreciendo distintos planes y servicio de fotógrafos alrededor del mundo.'
     "
     [buttonText]="'Contrátanos'"
-    [buttonLink]="'https://example.com'"
+    [buttonLink]="'#'"
   ></app-servicios>
   <div class="card-container">
     <app-card
@@ -35,7 +35,9 @@
 
   <div class="about-container">
     <app-about (showBio)="handleShowBio()"></app-about>
-    <div class="bio-content" *ngIf="bioVisible">{{ bio }}</div>
+    <div class="bio-content" *ngIf="bioVisible">
+        <p>{{ bio }}</p>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

@@ -1,7 +1,44 @@
+.presentation {
+    text-align: center;
+    align-items: center;
+ justify-content: center;
+    padding: 50px 20px;
+    color: var(--presentation-text-color, #fff);
+    background-color: var(--presentation-bg-color, #000);
+}
+.presentation h2 {
+    font-size: 2.5em;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.underlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0.5px;
+    bottom: 0;
+    height: 4px;
+    background-color: #27a776;
+    transform: scalex(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.underlight:hover::after {
+    transform: scalex(1);
+    transform-origin: bottom left;
+}
+
 .about-section {
     text-align: center;
-
   }
+
+.about-section h3{
+padding-bottom: 30px; 
+ }
+
+  
   
   .about-section img {
     width: 300px;
@@ -9,6 +46,7 @@
     padding-bottom: 20px;
   }
   
+ 
   .about-section button {
     margin-top: 10px;
     padding: 10px 20px;
