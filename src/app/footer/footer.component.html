@@ -4,12 +4,11 @@
       <div class="col-12">
         <hr>
         <p>&copy; Copyright <span>{{ footerText }}</span> Todos los derechos son Reservados</p>
-        <button (click)="changeFooterText()">Change Footer Text</button>
       </div>
       <div class="col-12">
         <div class="social-icons">
-          <a *ngFor="let link of socialLinks" [href]="link.href" target="_blank" (mouseover)="highlightIcon(link)" (mouseout)="unhighlightIcon(link)">
-            <i [class]="link.iconClass" [ngClass]="{'highlight': link.highlight}"></i>
+          <a *ngFor="let link of socialLinks" [href]="link.href" target="_blank">
+            <i [class]="link.iconClass"></i>
           </a>
         </div>
       </div>

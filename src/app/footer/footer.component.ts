@@ -16,16 +16,4 @@ export class FooterComponent {
     { href: 'https://instagram.com', iconClass: 'fab fa-instagram' },
     { href: 'https://linkedin.com', iconClass: 'fab fa-linkedin' }
   ];
-
-  changeFooterText() {
-    this.footerText = this.footerText === 'PhotoFolio' ? 'NewFooterText' : 'PhotoFolio';
-  }
-
-  highlightIcon(link: { href: string, iconClass: string, highlight?: boolean }) {
-    link.highlight = true;
-  }
-
-  unhighlightIcon(link: { href: string, iconClass: string, highlight?: boolean }) {
-    link.highlight = false;
-  }
 }
